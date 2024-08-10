@@ -1,0 +1,61 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "babel",
+        "ChatGPT",
+        "cspell",
+        "eslint",
+        "json",
+        "nodejs",
+        "OpenAI",
+        "prettier",
+        "readme",
+        "typescript",
+        "webpack"
+    ],
+    "ignoreWords": ["teh", "recieve"],
+    "ignorePaths": [
+        "node_modules/**",
+        "dist/**",
+        "build/**",
+        ".git/**",
+        "coverage/**",
+        "*.min.js",
+        "*.map",
+        "*.lock",
+        "package-lock.json"
+    ],
+    "import": ["cspell-import.json"],
+    "dictionaries": ["typescript", "node", "softwareTerms"],
+    "dictionaryDefinitions": [
+        {
+            "name": "typescript",
+            "path": "./dictionaries/typescript.txt",
+            "addWords": true
+        },
+        {
+            "name": "node",
+            "path": "./dictionaries/node.txt",
+            "addWords": true
+        },
+        {
+            "name": "softwareTerms",
+            "path": "./dictionaries/softwareTerms.txt",
+            "addWords": true
+        }
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.ts",
+            "language": "en",
+            "words": ["TSLint", "TypeScript"]
+        },
+        {
+            "filename": "**/*.md",
+            "language": "en",
+            "ignoreWords": ["markdown", "readme"]
+        }
+    ]
+}
